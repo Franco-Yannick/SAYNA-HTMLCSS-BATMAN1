@@ -1,0 +1,295 @@
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+         :root {
+            --yellow-color: #FFFF00;
+            --yellow-light: #f8f184;
+            --yellow-color: #19587d;
+            --write-color: #fff;
+            --gradient-white: #EDDEBF;
+            --grandient-red: #890008;
+            --black-color: #000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            font-family: 'rajdhani' sans-serif;
+            font-size: 36px;
+            font-weight: 400;
+        }
+        
+        p {
+            font-family: "Space Grotesk", sans-serif;
+        }
+        
+        button {
+            font-family: 'rajdhani';
+            font-size: 20px;
+            font-weight: 400;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        body {
+            background-image: url(../Illustrations/Bathome1.png);
+            background-color: black;
+            color: white;
+            font-family: 'Space-Grotesk', sans-serif;
+            font-weight: 300;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        /* Desing de la navigation */
+        
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .nav-header {
+            margin-top: 30px;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        nav ul a {
+            color: var(--write-color);
+            font-size: 25px;
+            font-weight: 500;
+            font-family: 'rajdhani', sans-serif;
+        }
+        
+        nav ul a:hover {
+            color: var(--yellow-color);
+        }
+        /* Design de la partie en tete hero */
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            width: 60%;
+            margin: 0 auto;
+            padding-top: 150px;
+        }
+        
+        .batman-cinema {
+            width: 80%;
+            height: auto;
+        }
+        
+        .batman-cinema>p {
+            font-size: 20px;
+            text-align: left;
+            margin-left: 170px;
+            margin-bottom: 15px;
+        }
+        
+        .batman-cinema>h1 {
+            font-weight: bold;
+            padding-bottom: 25px;
+            text-align: left;
+            margin-left: 170px;
+        }
+        /*Design de la section personnage */
+        
+        .btn {
+            text-decoration: none;
+            color: var(--write-color);
+            border: none;
+            background: linear-gradient( 80deg, var(--gradient-white), var(--grandient-red));
+            box-shadow: var(--black-color);
+            padding: 2px 15px;
+        }
+        
+        .cta {
+            display: flex;
+            justify-content: center;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 30px;
+            height: auto;
+        }
+        
+        .section-cinema {
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 80%;
+        }
+        
+        .section-cinema>.sect-cine {
+            margin: 0px;
+        }
+        
+        .section-cinema>.sect-cine>.image {
+            padding: 8px;
+            height: auto;
+            margin-bottom: 40px;
+            transition: 1s;
+        }
+        
+        .section-cinema>.sect-cine>.image>img {
+            height: auto;
+        }
+        
+        .section-cinema>.sect-cine>.image>h3 {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.3vw;
+            padding-top: 5px;
+            text-align: center;
+        }
+        
+        .section-cinema>.sect-cine>.image:hover {
+            -ms-transform: scale(1.1);
+            -webkit-transform: scale(0.4);
+            transform: scale(1.1);
+        }
+        /*Design de la partie section home */
+        
+        .titre {
+            margin: 20px 0;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5vw;
+            padding-bottom: 14px;
+        }
+        
+        .fleche {
+            margin-top: 265px;
+        }
+        
+        .scroll {
+            position: fixed;
+            top: 50%;
+            transform: translate(-50, -50%);
+            width: 90%;
+            left: 50%;
+        }
+        
+        .scroll-groupe {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        /* Design de la partie section némesis */
+        
+        .logo_up_nemesis {
+            position: relative;
+            left: 14%;
+        }
+        
+        .logo_up_nemesis>img {
+            width: 24%;
+            height: auto;
+        }
+        /* Border de la corps dde page */
+        /*
+.hero-image,
+.multimedia,
+.bande-annonce {
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    border-left: 3px solid rgba(255, 255, 255, 0.096);
+    border-right: 3px solid rgba(255, 255, 255, 0.096);
+    width: 80%;
+}*/
+        /* Design de la section miltimedia */
+        
+        .multimedia {
+            display: flex;
+            align-items: center;
+            width: 90%;
+            flex-direction: row;
+        }
+        
+        .slide {
+            display: flex;
+            flex-direction: row;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 1;
+            width: 60%;
+            height: auto;
+        }
+        
+        .slide1 {
+            background-image: linear-gradient(60deg, #c4c4c4, rgb(128, 128, 128));
+        }
+        
+        .slide1>img {
+            width: 50%;
+        }
+        
+        .slide-shown {
+            animation: fading 5s;
+            z-index: 4;
+        }
+        
+        @keyframes fading {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .slide2 {
+            background-color: rgb(0, 156, 39);
+        }
+        
+        .slide3 {
+            background-color: rgb(255, 0, 179);
+        }
+        
+        .article {
+            margin: 20px;
+            width: 20;
+            margin-top: left;
+        }
+        
+        .article>h2 {
+            font-size: 25px;
+            font-weight: 500;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        
+        .article>p {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        
+        .article>h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: lighter;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        
+        .article>p>span {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            color: var(--yellow-light);
+        }
+        /* Desing de la section bandde annonce */
+        
+        .video {
+            align-items: center;
+        }
