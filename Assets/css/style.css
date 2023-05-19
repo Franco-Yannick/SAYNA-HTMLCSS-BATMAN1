@@ -63,17 +63,29 @@
             list-style: none;
         }
         
-        nav ul a {
-            color: var(--write-color);
+        nav> ul , a {
+            color: var(--yellow-light);
             font-size: 25px;
             font-weight: 500;
             font-family: 'rajdhani', sans-serif;
+            margin: 60px;
         }
         
         nav ul a:hover {
-            color: var(--yellow-color);
+            color: var(--yellow-light);
         }
         /* Design de la partie en tete hero */
+
+        .nav-header>.container {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            border-left: 3px solid rgba(255, 255, 255, 0.096);
+            border-right: 3px solid rgba(255, 255, 255, 0.096);
+            border-bottom: 3px solid rgba(255, 255, 255, 0.096);
+            width: 90%;
+            height: 100px;
+        }
         
         .content {
             display: flex;
@@ -93,15 +105,15 @@
         .batman-cinema>p {
             font-size: 20px;
             text-align: left;
-            margin-left: 170px;
-            margin-bottom: 15px;
+            margin-left: 250px;
+            margin-bottom: 20px;
         }
         
         .batman-cinema>h1 {
             font-weight: bold;
             padding-bottom: 25px;
             text-align: left;
-            margin-left: 170px;
+            margin-left: 250px;
         }
         /*Design de la section personnage */
         
@@ -195,31 +207,48 @@
             height: auto;
         }
         /* Border de la corps dde page */
-        /*
-.hero-image,
-.multimedia,
-.bande-annonce {
-    margin: 0 auto;
-    padding-top: 45px;
-    padding-bottom: 45px;
-    border-left: 3px solid rgba(255, 255, 255, 0.096);
-    border-right: 3px solid rgba(255, 255, 255, 0.096);
-    width: 80%;
-}*/
+
+       .myhero {
+            margin: 0 auto;
+            padding-top: 45px;
+            padding-bottom: 45px;
+            border-left: 3px solid rgba(255, 255, 255, 0.096);
+            border-right: 3px solid rgba(255, 255, 255, 0.096);
+            width: 90%;
+        }
         /* Design de la section miltimedia */
         
-        .multimedia {
+        .media {
             display: flex;
             align-items: center;
             width: 90%;
             flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .sect-multimedia_1 {
+            flex-grow: 1;
+            margin-left: 8vw;
+        }
+
+        .sect-multimedia_2 {
+            display: flex;
+            justify-content: center;
+            flex-grow: 4;
+            width: 55%;
+            height: auto;
         }
         
+        .sect-multimedia_3 {
+            flex-grow: 1;
+        }
+        
+        /* Desing slider */
         .slide {
             display: flex;
             flex-direction: row;
-            border-top-right-radius: 15px;
-            border-bottom-right-radius: 15px;
+            border-top-right-radius: 45px;
+            border-bottom-right-radius: 45px;
             z-index: 1;
             width: 60%;
             height: auto;
@@ -256,6 +285,7 @@
         }
         
         .article {
+            align-items: center;
             margin: 20px;
             width: 20;
             margin-top: left;
@@ -288,8 +318,288 @@
             font-weight: 500;
             color: var(--yellow-light);
         }
-        /* Desing de la section bandde annonce */
+        /* Desing de la section bande annonce */
+
+       .label-bd-annonce {
+            position: relative;
+       } 
+
+       .label-bd-annonce>.resposive-bd {
+        width: 75%;
+        height: 75%;
+        margin-left: 11%;
+        margin-top: 5%;
+       }
+
+       .label-bd-annonce>.play_icon {
+        position: absolute;
+        left: 44%;
+        top: 46%;
+        width: 8%;
+        height: auto;
+        cursor: pointer;
         
-        .video {
+    }
+
+    .resposive-bd:hover {
+        box-shadow: 0 0 25px #fff;
+        transition: 1s;
+    }
+
+    .bd-annonce {
+        display: none;
+    }
+
+        /* Design de la formulaire */
+
+        .newsletter {
+            background: linear-gradient(to top left, #0f2027, #203a43, #2c5364);
+        }
+
+        .news-bloc {
+            width: 60%;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        
+        .btn-groupe {
+            margin: 10px;
+            padding: 12px;
+            text-align: center;
+            margin-top: 15px;
+        }
+        form>input {
+            display: block;
+            color: #fff;
+            font-family: "Space Grotesk", sans-serif;
+            width: 99%;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            margin-top: 15px;
+        }
+
+        form>label {
+            display: block;
+            font-family: "Space Grotesk", sans-serif;
+            margin-top: 15px;
+        }
+        
+        .label2 {
+            font-family: "Space Grotesk", sans-serif;
+            width: 60%;
+            margin-top: 15px;
+        }
+
+        .btn-groupe>button {
+            width: 150px;
+            height: 40px;
+            border-image: linear-gradient(160deg, hsl(0, 0%, 60%), hsl(198, 80%, 28%)) 1;
+            background-color: transparent;
+            color: white;
+            outline: none;
+        }
+
+        textarea {
+            font-family: "Space Grotesk", sans-serif;
+            width: 99%;
+            height: 20px;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: transparent;
+            outline: none;
+            color: #f1f1f1;
+        }
+        
+        form>h1 {
+            font-weight: 800;
+            text-align: center;
+        }
+        
+        form>h3 {
+            font-family: "Space Grotesk", sans-serif;
+            margin-top: 25px;
+        }
+        
+        form>p {
+            margin-top: 20px;
+        }
+        
+        .bloc-confirmer {
+            margin-top: 14px;
+            text-align: center;
+        }
+        
+        .btn-confirmer {
+            background: linear-gradient(to right, hsl(40, 40%, 84%), hsl(356, 60%, 40%));
+            width: 200px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            border: none;
+            outline: none;
+        }
+        /* Desing dropdown */
+        .dropdown {
+            margin-top: 30px;
+        }
+        .dropbtn {
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-in {
+            position: relative;
+            display: inline-block;
+            width: 99%;
+            height: 20px;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+        }
+
+        .dropdown-content {
+            font-family: "Space Grotesk", sans-serif;
+            margin-top: 20px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+            margin-top: 0px;
+            width: 59.5%;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        /* Desing de la section citation */
+
+        .bloc-citation {
+            width: 90%;
+            margin: 0 auto;
+            border-left: 3px solid rgba(255, 255, 255, 0.096);
+            border-right: 3px solid rgba(255, 255, 255, 0.096);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .sect-citation {
+            width: 40%
+        }
+
+        .sect-cit1 {
+            display: flex;
+            padding: 50px;
+            justify-content: flex-start;
+        }
+
+        .citation {
+            max-width: 80%;
+            text-align: center;
+            display: block;
+        }
+        .Author {
+            margin: 22px;
+            font-size: 12px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .citation2 {
+            display: flex;
+            flex-direction: column;
             align-items: center;
+        }
+
+        .citation1 {
+            margin: 40px;
+            display: flex;
+            margin-left: -15%;
+        }
+        .citation3 {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: -120px;
+        }
+        .rd {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        /*Design sur footer */
+
+        .nav-footer {
+            text-align: center;
+            padding-top: 200px;
+            padding-bottom: 40px;
+        }
+        
+        .presentation {
+            font-size: 1.2vw;
+            line-height: 20px;
+        }
+        
+        .presentation>img {
+            width: 20px;
+        }
+        
+        .groupe-icon {
+            margin-top: 23px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        .groupe-icon>div {
+            margin: 12px;
+        }
+        
+        .groupe-icon>div>img {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .nav-footer {
+            width: 90%;
+            margin: 0 auto;
+            border-left: 3px solid rgba(255, 255, 255, 0.096);
+            border-right: 3px solid rgba(255, 255, 255, 0.096);
+        }
+        
+        /** .......**/
+
+        nav>img:hover,
+        .scroll-grp:hover {
+             filter: brightness(0) saturate(100%) invert(88%) sepia(93%) saturate(1187%) hue-rotate(357deg) brightness(104%) contrast(105%);
+        }
+
+        /* Section allies */
+        .logos_bat>img {
+            margin-left: 67vw;
+            margin-bottom: -55px;
         }
